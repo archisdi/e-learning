@@ -12,6 +12,7 @@ class KuisController extends Controller
     {
         $matakuliah = Auth::guard('dosen')->user()->dosen_kelas;
 
+
         return view('dosen.kuis.index', compact('matakuliah'));
     }
 
