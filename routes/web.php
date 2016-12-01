@@ -62,3 +62,5 @@ Route::post('admin/password/reset', 'AdminAuth\ResetPasswordController@reset');
 Route::get('admin/password/reset', 'AdminAuth\ForgotPasswordController@showLinkRequestForm');
 Route::get('admin/password/reset/{token}', 'AdminAuth\ResetPasswordController@showResetForm');
 
+Route::get('file/materi/{dosen_mk_id}/{file_id}','DataController@get_materi');
+

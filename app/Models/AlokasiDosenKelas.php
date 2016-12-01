@@ -8,4 +8,11 @@ class AlokasiDosenKelas extends Model
 {
     protected $table = 'alokasi_dosen_kelas';
 
+    public function kelas(){
+        return $this->BelongsTo('App\Models\Kelas');
+    }
+
+    public function dosen_matakuliah(){
+        return $this->BelongsTo('App\Models\AlokasiDosenMatakuliah','alokasi_dosen_matakuliah_id');
+    }
 }

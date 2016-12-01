@@ -15,14 +15,15 @@ class CreateAlokasiMaterisTable extends Migration
     {
         Schema::create('alokasi_materi', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('alokasi_dosen_kelas_id')->unsigned();
+            $table->integer('alokasi_dosen_matakuliah_id')->unsigned();
             $table->string('nama');
+            $table->string('ext');
             $table->timestamps();
 
 
-            $table->foreign('alokasi_dosen_kelas_id')
+            $table->foreign('alokasi_dosen_matakuliah_id')
                 ->references('id')
-                ->on('alokasi_dosen_kelas');
+                ->on('alokasi_dosen_matakuliah');
         });
     }
 

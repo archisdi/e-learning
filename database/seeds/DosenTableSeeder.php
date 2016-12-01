@@ -27,5 +27,21 @@ class DosenTableSeeder extends Seeder
             'email' => 'aniqatiqi@telkomuniversity.ac.id',
             'password' => bcrypt('15880028')
         ]);
+
+        Dosen::create([
+            'nama' => 'Dody Qori',
+            'kode' => 'DQU',
+            'nip' => '15880023',
+            'email' => 'dqu@telkomuniversity.ac.id',
+            'password' => bcrypt('15880023')
+        ]);
+
+        Dosen::create([
+            'nama' => 'Untari Novia Wisesty',
+            'kode' => 'UNW',
+            'nip' => '158800662',
+            'email' => 'unw@telkomuniversity.ac.id',
+            'password' => bcrypt('158800662')
+        ]);
     }
 }
