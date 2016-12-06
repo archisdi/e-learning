@@ -12,12 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('root');
 });
 
 //Dosen Login
 Route::get('dosen/login', 'DosenAuth\LoginController@showLoginForm');
-Route::post('dosen/login', 'DosenAuth\LoginController@login');
+Route::post('dosen/login', 'DosenAuth\LoginController@login')->name('dosen.login');
 Route::post('dosen/logout', 'DosenAuth\LoginController@logout');
 
 //Dosen Register
@@ -33,7 +33,7 @@ Route::get('dosen/password/reset/{token}', 'DosenAuth\ResetPasswordController@sh
 
 //Mahasiswa Login
 Route::get('mahasiswa/login', 'MahasiswaAuth\LoginController@showLoginForm');
-Route::post('mahasiswa/login', 'MahasiswaAuth\LoginController@login');
+Route::post('mahasiswa/login', 'MahasiswaAuth\LoginController@login')->name('mahasiswa.login');
 Route::post('mahasiswa/logout', 'MahasiswaAuth\LoginController@logout');
 
 //Mahasiswa Register
@@ -49,7 +49,7 @@ Route::get('mahasiswa/password/reset/{token}', 'MahasiswaAuth\ResetPasswordContr
 
 //Admin Login
 Route::get('admin/login', 'AdminAuth\LoginController@showLoginForm');
-Route::post('admin/login', 'AdminAuth\LoginController@login');
+Route::post('admin/login', 'AdminAuth\LoginController@login')->name('admin.login');
 Route::post('admin/logout', 'AdminAuth\LoginController@logout');
 
 //Admin Register
@@ -63,4 +63,7 @@ Route::get('admin/password/reset', 'AdminAuth\ForgotPasswordController@showLinkR
 Route::get('admin/password/reset/{token}', 'AdminAuth\ResetPasswordController@showResetForm');
 
 Route::get('file/materi/{dosen_mk_id}/{file_id}','DataController@get_materi');
+Route::get('file/kuis/{kelas_id}/{kuis_id}/{file_name}','DataController@get_kuis');
+Route::get('file/submit/{kelas_id}/{kuis_id}/{file_name}','DataController@get_submit');
+
 

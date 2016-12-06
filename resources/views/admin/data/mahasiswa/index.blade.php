@@ -43,8 +43,6 @@
                                     <td>{{$item->nama}}</td>
                                     <td><span class="label label-default">{{$item->nim}}</span></td>
                                     <td>{{$item->email}}</td>
-                                    <td><a href="{{route('admin.mahasiswa.show',$item->id)}}"
-                                           class="btn btn-primary btn-sm"><span class="fa fa-eye"></span></a></td>
                                 </tr>
                             @endforeach
                         </table>

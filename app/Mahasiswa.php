@@ -48,4 +48,16 @@ class Mahasiswa extends Authenticatable
             return 'Perempuan';
         }
     }
+
+    public function mahasiswa_kelas(){
+        return $this->HasMany('App\Models\AlokasiMahasiswaKelas');
+    }
+
+    public function dosen_kelas(){
+        return $this->BelongsToMany('App\Models\AlokasiDosenKelas','alokasi_mahasiswa_kelas');
+    }
+
+    public function kuis(){
+        return $this->HasMany('App\Models\AlokasiMahasiswaKuis');
+    }
 }

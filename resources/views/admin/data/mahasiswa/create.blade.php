@@ -1,6 +1,6 @@
 @extends('admin.layout.app')
 
-@section('page_title','Tambah Matakuliah Tawar')
+@section('page_title','Tambah Data Mahasiswa')
 
 @section('content')
     <section class="content-header">

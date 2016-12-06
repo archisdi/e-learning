@@ -44,10 +44,18 @@ elixir(function(mix) {
     mix.copy('bower_components/font-awesome/css/font-awesome.css', 'public/css/libs/font-awesome.css');
     mix.copy('bower_components/font-awesome/fonts', 'public/fonts');
 
-    // iCheck
-    mix.copy('bower_components/AdminLTE/plugins/iCheck/square/blue.css', 'public/css/libs/i-check.css');
-    mix.copy('bower_components/AdminLTE/plugins/iCheck/square/blue.png', 'public/css/blue.png');
-    mix.copy('bower_components/AdminLTE/plugins/iCheck/icheck.js', 'public/js/libs/i-check.js');
+    // Flatpicker
+    mix.copy('bower_components/flatpickr/dist/flatpickr.min.css', 'public/css/libs/flatpickr.css');
+    mix.copy('bower_components/flatpickr/dist/flatpickr.js', 'public/js/libs/flatpickr.js');
+
+    //Datepicker
+    // mix.copy('bower_components/AdminLTE/plugins/datepicker/datepicker3.css', 'public/css/libs/datepicker.css');
+    // mix.copy('bower_components/AdminLTE/plugins/datepicker/bootstrap-datepicker.js', 'public/js/libs/datepicker.js');
+
+    // // iCheck
+    // mix.copy('bower_components/AdminLTE/plugins/iCheck/square/blue.css', 'public/css/libs/i-check.css');
+    // mix.copy('bower_components/AdminLTE/plugins/iCheck/square/blue.png', 'public/css/blue.png');
+    // mix.copy('bower_components/AdminLTE/plugins/iCheck/icheck.js', 'public/js/libs/i-check.js');
 
     // Merge all CSS files in one file.
     mix.styles([
@@ -56,7 +64,7 @@ elixir(function(mix) {
         '/libs/admin-lte.css',
         'libs/admin-lte-skin.css',
         'libs/font-awesome.css',
-        '/libs/i-check.css'
+        '/libs/flatpickr.css'
         // '/libs/custom.css'
     ], './public/css/min.css', './public/css');
 
@@ -65,7 +73,7 @@ elixir(function(mix) {
     mix.scripts([
         '/libs/bootstrap.js',
         '/libs/admin-lte.js',
-        '/libs/i-check.js',
+        '/libs/flatpickr.js',
         '/libs/select2.js'
     ], './public/js/min.js', './public/js');
 

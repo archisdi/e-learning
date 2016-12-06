@@ -23,18 +23,6 @@
                 </a>
             </li>
 
-            <li class="{{Request::is('admin/data/matakuliah') || Request::is('admin/data/matakuliah/*') ? 'active':''}}">
-                <a href="{{'/admin/data/matakuliah'}}">
-                    <i class="fa fa-book"></i> <span>Matakuliah</span>
-                </a>
-            </li>
-
-            <li class="{{Request::is('admin/data/kelas') || Request::is('admin/data/kelas/*') ? 'active':''}}">
-                <a href="{{'/admin/data/kelas'}}">
-                    <i class="fa fa-university"></i> <span>Kelas</span>
-                </a>
-            </li>
-
         </ul>
     </section>
     <!-- /.sidebar -->

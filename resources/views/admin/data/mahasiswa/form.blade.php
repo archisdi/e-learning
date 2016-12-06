@@ -17,7 +17,7 @@
 </div>
 
 
-<div class="form-group @if($errors->has('nim')) has-error @endif">
+<div class="form-group @if($errors->has('jenis_kelamin')) has-error @endif">
     {!! Form::label('jenis_kelamin', 'Jenis Kelamin', array('class' => 'col-sm-2 control-label')) !!}
 
     <div class="col-sm-10">
@@ -37,7 +37,7 @@
     </div>
 </div>
 
-<div class="form-group @if($errors->has('email')) has-error @endif">
+<div class="form-group @if($errors->has('password')) has-error @endif">
     {!! Form::label('password', 'Password', array('class' => 'col-sm-2 control-label')) !!}
     <div class="col-sm-10">
         {!! Form::password('password', array('class' => 'form-control', 'id' => 'password')) !!}

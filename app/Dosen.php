@@ -16,7 +16,7 @@ class Dosen extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'nama','nip', 'kode', 'email', 'password',
     ];
 
     protected $table = 'dosen';

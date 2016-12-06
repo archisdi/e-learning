@@ -9,6 +9,11 @@ use App\Http\Controllers\Controller;
 class MahasiswaController extends Controller
 {
 
+    public function  __construct()
+    {
+        return $this->middleware('admin');
+    }
+
     public function index()
     {
         $mahasiswa = Mahasiswa::paginate(15);

@@ -10,21 +10,21 @@
                     <i class="fa fa-home"></i> <span>Beranda</span>
                 </a>
             </li>
-            {{--<li class="{{Request::is('mahasiswa/registrasi') || Request::is('mahasiswa/registrasi/*') ? 'active':''}}">--}}
-                {{--<a href="{{'/mahasiswa/registrasi'}}">--}}
-                    {{--<i class="fa fa-list"></i> <span>Registrasi</span>--}}
-                {{--</a>--}}
-            {{--</li>--}}
-            {{--<li class="{{Request::is('mahasiswa/jadwal') || Request::is('mahasiswa/jadwal/*') ? 'active':''}}">--}}
-                {{--<a href="{{'/mahasiswa/jadwal'}}">--}}
-                    {{--<i class="fa fa-calendar"></i> <span>Jadwal</span>--}}
-                {{--</a>--}}
-            {{--</li>--}}
-            {{--<li class="{{Request::is('mahasiswa/kehadiran') || Request::is('mahasiswa/kehadiran/*') ? 'active':''}}">--}}
-                {{--<a href="{{'/mahasiswa/kehadiran'}}">--}}
-                    {{--<i class="fa fa-check"></i> <span>Kehadiran</span>--}}
-                {{--</a>--}}
-            {{--</li>--}}
+            <li class="{{Request::is('mahasiswa/materi') || Request::is('mahasiswa/materi/*') ? 'active':''}}">
+                <a href="{{'/mahasiswa/materi'}}">
+                    <i class="fa fa-book"></i> <span>Materi</span>
+                </a>
+            </li>
+            <li class="{{Request::is('mahasiswa/kuis') || Request::is('mahasiswa/kuis/*') ? 'active':''}}">
+                <a href="{{'/mahasiswa/kuis'}}">
+                    <i class="fa fa-list"></i> <span>Kuis</span>
+                </a>
+            </li>
+            <li class="{{Request::is('mahasiswa/nilai') || Request::is('mahasiswa/nilai/*') ? 'active':''}}">
+                <a href="{{'/mahasiswa/nilai'}}">
+                    <i class="fa fa-check"></i> <span>Nilai</span>
+                </a>
+            </li>
         </ul>
     </section>
     <!-- /.sidebar -->

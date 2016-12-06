@@ -15,4 +15,8 @@ class AlokasiDosenKelas extends Model
     public function dosen_matakuliah(){
         return $this->BelongsTo('App\Models\AlokasiDosenMatakuliah','alokasi_dosen_matakuliah_id');
     }
+
+    public function kuis(){
+        return $this->HasMany('App\Models\AlokasiKuis');
+    }
 }

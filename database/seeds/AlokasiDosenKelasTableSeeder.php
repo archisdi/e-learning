@@ -18,11 +18,6 @@ class AlokasiDosenKelasTableSeeder extends Seeder
         ]);
 
         AlokasiDosenKelas::create([
-            'alokasi_dosen_matakuliah_id' => '1',
-            'kelas_id' => '2'
-        ]);
-
-        AlokasiDosenKelas::create([
             'alokasi_dosen_matakuliah_id' => '2',
             'kelas_id' => '1'
         ]);
@@ -45,6 +40,11 @@ class AlokasiDosenKelasTableSeeder extends Seeder
         AlokasiDosenKelas::create([
             'alokasi_dosen_matakuliah_id' => '6',
             'kelas_id' => '3'
+        ]);
+
+        AlokasiDosenKelas::create([
+            'alokasi_dosen_matakuliah_id' => '1',
+            'kelas_id' => '2'
         ]);
 
     }

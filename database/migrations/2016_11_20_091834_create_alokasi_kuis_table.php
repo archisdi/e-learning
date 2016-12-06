@@ -16,8 +16,10 @@ class CreateAlokasiKuisTable extends Migration
         Schema::create('alokasi_kuis', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('alokasi_dosen_kelas_id')->unsigned();
+            $table->string('title');
             $table->string('ext');
             $table->string('desc');
+            $table->dateTime('due');
             $table->timestamps();
 
             $table->foreign('alokasi_dosen_kelas_id')

@@ -18,7 +18,8 @@ class DatabaseSeeder extends Seeder
         $this->call(MatakuliahTableSeeder::class);
         $this->call(AlokasiDosenMatakuliahTableSeeder::class);
         $this->call(AlokasiDosenKelasTableSeeder::class);
-        $this->call(AlokasiKuisTableSeeder::class);
+        $this->call(AlokasiMahasiswaKelasTableSeeder::class);
+//        $this->call(AlokasiKuisTableSeeder::class);
     }
 
 }
